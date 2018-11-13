@@ -7,10 +7,10 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, TextInput, Image, ImageBackground } from 'react-native';
+import { ActivityIndicator, Platform, StyleSheet, Text, View, TextInput, Image, ImageBackground } from 'react-native';
 import Forecast from './Forecast';
 import MomentList from './MomentList'
-
+import MomentFlatList from './MomentFlatList'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -81,7 +81,7 @@ export default class App extends Component {
   render() {
     return (
       <ImageBackground source={require('./img/sample_photo_0.png')} style={styles.container}>
-        <MomentList />
+        <MomentFlatList />
       </ImageBackground>
     );
   }
